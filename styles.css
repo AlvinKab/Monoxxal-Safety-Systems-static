@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Federo&family=Genos:ital,wght@0,100..900;1,100..900&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* This is the root element. Most font sizes in this file will be relative to this. */
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Belleza', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+header {
+    background-color: red;
+    height: 10vh;
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 5px #808080;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vh 0;
+}
+
+a {
+    text-decoration: none;
+    color: #008080;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    color:#004040;
+}
+
+a:active {
+    color: #002020;
+}
+
+header nav a {
+    color: white;
+}
+
+main {
+    background: 
+        linear-gradient(150deg, rgba(255, 0, 0, 0.8) 10%, transparent 10% 90%, rgba(255, 0, 0, 0.8) 90%),
+        linear-gradient(120deg, rgba(0, 0, 0, 0.8) 10%, transparent 10% 90%, rgba(0, 0, 0, 0.8) 90%),
+        linear-gradient(70deg, rgba(128, 128, 128, 0.8) 10%, transparent 10% 90%, rgba(128, 128, 128, 0.8) 90%),
+        linear-gradient(30deg, rgba(255, 0, 0, 0.8) 10%, #DDDDDD 10% 90%, rgba(255, 0, 0, 0.8) 90%),
+        #DDDDDD /* Fallback */
+    ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+}
+
+h1,
+h2 {
+    font-family: 'Federo', Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px;
+}
+
+code,
+kbd,
+samp {
+    font-family: 'Lekton', Arial, Helvetica, sans-serif;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.history-sections {
+    max-height: 100%;
+    position: sticky;
+    top: 15vh;
+    bottom: 50vh;
+}
+
+.history-sections nav ul {
+    list-style-type: none;
+}
+
+.history-main-content {
+    padding: 10px 150px 10px 10px;
+    text-align: left;
+}
+
+.history-main-content hgroup h1 {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    border-left: 10px gray solid;
+    background-color: white;
+    padding: 0 30px 0;
+    font-size: 2rem;
+    font-style: oblique;
+}
+
+.hometitle {
+    background-image: conic-gradient(from 90deg at 90% 50%, orange 20%, red 40%, black 60%, red 80%, orange 100%);
+    width: 100%;
+    min-height: 30vh;
+}
+
+.kbd {
+    text-align: left;
+    color: gray;
+}
+
+kbd {
+    font-variant: small-caps;
+}
+
+.homeheader {
+    font-size: 3rem;
+    color: white;
+}
+
+.homeheader h1 {
+    font-family: 'Genos', Arial, Helvetica, sans-serif;
+}
+
+.homecontent {
+    padding: 10px 200px 10px;
+}
+
+dl,
+ol {
+    text-align: left;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+dt {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.product {
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 10px;
+    height: 350px;
+    line-height: 1.5rem;
+    margin: 20px;
+    width: 80%;
+    text-align: left;
+    background-color: white;
+}
+
+.product h4 {
+    text-align: center;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+#sprinkler-types {
+    list-style-position: inside;
+}
+
+.safety-tips-page,
+.table-page,
+.reviews-page,
+.faq-page {
+    padding: 0 100px 0;
+}
+
+.faq-content {
+    text-align: left;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+table,
+tr,
+th,
+td {
+    background-color: #CCCCCC;
+    padding: 10px;
+    margin: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+th {
+    background-color: #ADAD9B;
+}
+
+.review {
+    border-top: 10px solid;
+}
+
+.reviews-page {
+    text-align: left;
+}
+
+samp {
+    font-size: 1.7rem;
+}
+
+summary {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.role-container {
+    display: flex;
+    width: 80%;
+}
+
+.role {
+    border-radius: 10px;
+    background-color: white;
+    width: 25%;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    background-color: #404040;
+    color: white;
+    max-height: 10vh;
+}
+
+footer div {
+    margin: 5px;
+}
