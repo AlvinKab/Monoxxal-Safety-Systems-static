@@ -265,3 +265,48 @@ footer {
 footer div {
     margin: 5px;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+    a:hover {
+        color: #00C0C0;
+    }
+
+    a:active {
+        color: #00E0E0;
+    }
+
+    main {
+        background: 
+            linear-gradient(150deg, rgba(255, 0, 0, 0.8) 10%, transparent 10% 90%, rgba(255, 0, 0, 0.8) 90%),
+            linear-gradient(120deg, rgba(255, 255, 255, 0.8) 10%, transparent 10% 90%, rgba(255, 255, 255, 0.8) 90%),
+            linear-gradient(70deg, rgba(128, 128, 128, 0.8) 10%, transparent 10% 90%, rgba(128, 128, 128, 0.8) 90%),
+            linear-gradient(30deg, rgba(255, 0, 0, 0.8) 10%, #333333 10% 90%, rgba(255, 0, 0, 0.8) 90%),
+            #333333 /* Fallback */
+        ;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    blockquote,
+    .product,
+    .role {
+        background-color: black;
+    }
+
+    table,
+    tr,
+    td {
+        background-color: #444444;
+    }
+
+    th {
+        background-color: #525264;
+    }
+
+    footer {
+        background-color: #C0C0C0;
+        color: black;
+    }
+}
